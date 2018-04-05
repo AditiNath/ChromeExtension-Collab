@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Sign In in Chrome Extensions Example</title>
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="lib/magicsuggest/magicsuggest.css" rel="stylesheet">
+   <link rel="stylesheet" href="vendor/font-awesome/css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/main1.css">
+
+</head>
+<body>
+<div class="title">
+    <a href="#" id ="closePopUp" style="float:right"> <span class = "fa fa-times" aria-hidden="true"></span>
+    </a>
+    <a href="main.html" style="float:left"><span class="fa fa-chevron-left" aria-hidden="true"></span></a>
+    New Post
+  </div>
+
+  <hr>
+  <div class="container">
+  <label for="inputTopic">Choose a category for your post</label>
+  <select id="inputTopic" class="form-control">
+    <option value="web" selected>Web 2.0 Technologies</option>
+    <option value="inlearning">Information Processing</option>
+    <option value="reptool">Representational Tools</option>
+    <option value="iescript">Internal and External Scripting</option>
+    <option value="thinkaloud">Think Aloud</option>
+    <option value="abtest">A/B Testing</option>
+  </select>
+
+  <br>
+
+  <label for="postType">What kind of post is it?</label>
+
+  <div id="postType">
+    <label class="radio-inline"><input type="radio" name="posttyp" id="question" value="question">   Question  </label>
+    <label class="radio-inline"><input type="radio" name="posttyp" id="explanation" value="explanation">   Explanation  </label>
+    <label class="radio-inline"><input type="radio" name="posttyp" id="example" value = "example">   Example  </label>
+  </div>
+<br>
+  <label for="title1">Title</label>
+  <input type="text" class="form-control" id="title1" placeholder="Add the paper's title"></input>
+  <br>
+
+  <label for="ms">Tags</label>
+  <input id="ms" class="form-control" name="keywords[]" placeholder="Add tags"/>
+
+  <small id="prompt_question" hidden><br>Consider framing your question like following: 1. What is ..? 2. How would you describe ..? 3. What examples can you find to explain..?<br></small>
+  <small id="prompt_explanation" hidden><br>Consider including the key points, their definitions and some examples.<br></small>
+  <small id="prompt_example" hidden><br>Consider including the context for your example<br></small>
+  <br>
+
+  <label for="notes">Notes</label>
+  <textarea class="form-control" rows="3" id="notes" placeholder="Add notes"></textarea>
+
+
+
+  <label for="addSource-button">Do you want to add a source for your post?</label>
+  <a href="#" id="addSource-button">Yes</a> <a href="#" id="dontaddSource-button">No</a>
+  <br>
+  <div id="bookmark" hidden>
+    <label for="url">Source</label>
+    <input type="text" class="form-control" id="url">
+  </div>
+  <br>
+
+<button id="addPost-button" class="btn btn-success btn-block">Add Post</button>
+
+</div>
+
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+<script src="lib/magicsuggest/magicsuggest.js"></script>
+<script src="post.js"></script>
+</body>
+</html>

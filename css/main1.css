@@ -1,0 +1,95 @@
+/**
+* Copyright 2015 Google Inc. All Rights Reserved.
+*
+* Licensed under the Apache License, Version 2.0 (the "License");
+* you may not use this file except in compliance with the License.
+* You may obtain a copy of the License at
+*
+*      http://www.apache.org/licenses/LICENSE-2.0
+*
+* Unless required by applicable law or agreed to in writing, software
+* distributed under the License is distributed on an "AS IS" BASIS,
+* WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+* See the License for the specific language governing permissions and
+* limitations under the License.
+*/
+
+html, body {
+   font-family: "Arial", Helvetica, sans-serif;
+}
+body {
+  width: 370px;
+  min-height: 300px;
+  margin: 0;
+  padding: 5px;
+}
+
+
+textarea {
+  width: 220px;
+}
+input#save {
+  font-weight: bold; width: auto;
+}
+
+.mdl-grid {
+  max-width: 1024px;
+  margin: auto;
+}
+.mdl-layout__header-row {
+  padding: 0;
+}
+.quickstart-user-details-container {
+  margin-top: 20px;
+  line-height: 25px;
+}
+#quickstart-sign-in-status {
+  font-weight: bold;
+}
+pre {
+  overflow-x: scroll;
+  line-height: 18px;
+}
+code {
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+
+#login
+{
+  position:absolute;
+  top:20%;
+}
+
+
+.title
+{
+  text-align: center;
+  font-weight: bold;
+  font-family: "Arial", Helvetica, sans-serif;
+  font-size: 1.5em;
+  color: #4d4d4d;
+}
+
+.title a
+{
+ text-decoration: none;
+ font-size: medium;
+ color: #999999;
+}
+
+a
+{
+ text-decoration: none;
+ font-size: medium;
+ color: #999999;
+}
+
+a:hover {
+    color: #595959;
+}
+
+a:active {
+    color: #595959;
+}

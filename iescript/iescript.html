@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta charset=utf-8 />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collaborative Reference Sharing Tool</title>
+   <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../css/main1.css">
+   <link rel="stylesheet" href="../lib/tab.css">
+  <link rel="stylesheet" href="../lib/overlay.css">
+  <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
+
+</head>
+<body>
+
+<div class="title">
+    <a href="#" id ="closePopUp" style="float:right"> <span class = "fa fa-times" aria-hidden="true"></span>
+    </a>
+    <a href="../main.html" style="float:left"><span class="fa fa-chevron-left" aria-hidden="true"></span></a>
+    Internal and External Scripting
+  </div>
+
+ <br>
+
+
+<nav class="navbar navbar-light bg-light justify-content-between flex-nowrap flex-row">
+    <ul class="nav navbar-nav flex-row">
+        <li class="nav-item"><a class="nav-link pr-4" href="../post.html"><span class="fa fa-plus" aria-hidden="true"></span> Post</a></li>
+        <li class="nav-item"><a class="nav-link pr-3" href="#" id="questions">Question</a></li>
+        <li class="nav-item"><a class="nav-link pr-3" href="#" id="explanations">Explanation</a></li>
+        <li class="nav-item"><a class="nav-link" href="#" id="examples">Example</a></li>
+    </ul>
+</nav>
+
+
+<div id="question_div" class="tabcontent"></div>
+<div id="explanation_div" class="tabcontent"></div>
+<div id="example_div" class="tabcontent"></div>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" id="overlay_close">&times;</a>
+  <div class="overlay-content">
+    <input type="checkbox" name="reason" value="Was not relevant to the question">Was not relevant to the question<br>
+    <input type="checkbox" name="reason" value="Not enough explanation">Not enough explanation<br>
+    <input type="checkbox" name="reason" value="The explanation was confusing">The explanation was confusing<br>
+    <input type="button" id="overlay_submit_btn" value="Submit"><br>
+    <p id="overlay_msg"></p>
+  </div>
+
+</div>
+
+
+
+
+
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+  <script src="iescript.js"></script>
+</body>
+</html>

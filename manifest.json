@@ -1,0 +1,26 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": "firebase.png",
+      "default_popup": "login.html"
+   },
+   "content_security_policy": "script-src 'self' https://www.gstatic.com/ https://*.firebaseio.com https://www.googleapis.com; object-src 'self'",
+   "description": "This sample shows how to authorize Firebase in a Chrome extension using a Google account.",
+   "icons": {
+      "128": "firebase.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlXACxvbtoCtriGAVcKIWLkAypWoEvQglkRMTCZsduq2uBOKTKpOV1zl7x3wotkTLvrJoz/1JlZXs5ExIjMal4e7qRs1pa0imlsa53C5MC+v+Yuzn+W+Or1FvUTkCT1vmYq9zl0vfkRRRQevSA+XoIPRgVzSxQqyCz8D1/dxJnMV23AOE2R1v+JCoTINhlRq4q+AbwBdnprgRLcQm8B0EyRCscEq7X6AibWnIrWDNdJVm0M4OaPpui1SZ5yPnrXo59sBHy90DoPmYIenA00or2OQrSvWP1i8uICvJ8VdefnOs7fDXOJYFURqfKTqCtGD3tvonByB0uavu3RbM+sywswIDAQAB",
+   "manifest_version": 2,
+   "name": "Collaborative Reference Sharing Tool",
+   "oauth2": {
+      "client_id": "62715960283-6ctvhgmsen7jong17oqb1pd243f1mcu5.apps.googleusercontent.com",
+
+      "scopes": [ "https://www.googleapis.com/auth/userinfo.email", "https://www.googleapis.com/auth/userinfo.profile" ]
+   },
+   "permissions": [ "identity", "gcm", "storage","notifications","activeTab","tabs" ],
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "2.1"
+
+}
